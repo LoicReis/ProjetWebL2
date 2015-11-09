@@ -1,80 +1,186 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	  <head>
 	  <meta charset="utf-8"/>
 	  <!--Permet d'afficher correctement les caractères spéciaux comme é,è..-->
-	  <title>Coupe d'Europe de Football 2016 en France</title>
-	 </head>
-    <form method="post" action="traitement.php">
-        <fieldset>
-          <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+	  <title>Coupe d'Europe de Football 2016 en France - Formulaire</title>
+	  </head>
 
-          <label for="nom">Quel est votre nom ?</label>
-          <input type="text" name="nom" id="nom" />
 
-          <label for="prenom">Quel est votre prénom ?</label>
-          <input type="text" name="prenom" id="prenom" />
+	  <body>
+
+	  <h1> Coupe d'Europe de Football 2016</h1>
+	  <h2> Formulaire </h2>
+	  	<br>
+	  	<br>	  	
+	  	<!--Bouton Retour-->
+	  <a href="index.html"> RETOUR </a>
+	  	<br>
+	  	<br>	  		  
+		<img src="euro2016.png" width="150" height="250"/>  
+	  	<br>
+	  	<br>
+
+		<!--Onglets des différents liens du site -->
+	  <div id="menu"> 
+		<ul id="onglets">
+		<li class="active"><a href="index.html"> Accueil </a></li>
+		<li><a href="calendrier.html"> Calendrier </a></li>
+		<li><a href="groupe.html"> Groupes </a></li>
+		<li><a href="equipe.html"> Equipes </a></li>
+		<li><a href="ville-accueil.html"> Villes d'accueil </a></li>
+		<li><a href="tarifs.html"> Tarifs </a></li>
+		<li><a href="formulaire.html"> Formulaire de contact </a></li>
+		</ul>
+		</div>
+
+		  <form method="post" action="traitement.php">
+		        <fieldset>
+		          <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+
+		          <label for="nom">Quel est votre nom ?</label>
+		          <input type="text" name="nom" id="nom" required />
+
+		          <label for="prenom">Quel est votre prénom ?</label>
+		          <input type="text" name="prenom" id="prenom" required />
  
-          <label for="email">Quel est votre e-mail ?</label>
-          <input type="email" name="email" id="email" />
+		          <label for="email">Quel est votre e-mail ?</label>
+		          <input type="email" name="email" id="email" required />
 
-        </fieldset>
-   <p>
-       <label for="pays">Qui va gagner la coupe europe ?</label><br />
-       <select name="pays" id="pays">
-           <optgroup label="Groupe A">
-               <option value="france">France</option>
-               <option value="espagne">Espagne</option>
-               <option value="italie">Italie</option>
-               <option value="royaume-uni">Royaume-Uni</option>
-           </optgroup>
-           <optgroup label="Groupe B">
-               <option value="canada">Canada</option>
-               <option value="etats-unis">Etats-Unis</option>
-           </optgroup>
-           <optgroup label="Groupe C">
-               <option value="chine">Chine</option>
-               <option value="japon">Japon</option>
-           </optgroup>
-       </select>
-   </p>
-   <p>
-       <label for="pays">finaliste ?</label><br />
-       <select name="pays" id="pays">
-           <optgroup label="Groupe A">
-               <option value="france">France</option>
-               <option value="espagne">Espagne</option>
-               <option value="italie">Italie</option>
-               <option value="royaume-uni">Royaume-Uni</option>
-           </optgroup>
-           <optgroup label="Groupe B">
-               <option value="canada">Canada</option>
-               <option value="etats-unis">Etats-Unis</option>
-           </optgroup>
-           <optgroup label="Groupe C">
-               <option value="chine">Chine</option>
-               <option value="japon">Japon</option>
-           </optgroup>
-       </select>
-   </p>
-   <p>
-       <label for="pays">3ieme ?</label><br />
-       <select name="pays" id="pays">
-           <optgroup label="Groupe A">
-               <option value="france">France</option>
-               <option value="espagne">Espagne</option>
-               <option value="italie">Italie</option>
-               <option value="royaume-uni">Royaume-Uni</option>
-           </optgroup>
-           <optgroup label="Groupe B">
-               <option value="ukraine">Ukraine</option>
-               <option value="Portugal">Portugal</option>
-           </optgroup>
-           <optgroup label="Groupe C">
-               <option value="chine">Chine</option>
-               <option value="japon">Japon</option>
-           </optgroup>
-       </select>
-   </p>
-</form>
-</html>
+		        </fieldset>
+		   <p>
+		       <label for="pays">Qui va gagner la Coupe d'Europe ?</label><br />
+		       <select name="pays" id="pays">
+		           <optgroup label="Groupe A">
+		               <option value="france">France</option>
+		               <option value="pologne">Pologne</option>
+		               <option value="bosnie">Bosnie-Herzégovnie</option>
+		               <option value="danemakr">Danemark</option>
+		           </optgroup>
+	           <optgroup label="Groupe B">
+	               <option value="allemagne">Allemagne</option>
+	               <option value="islande">Islande</option>
+	               <option value="turquie">Turquie</option>
+	               <option value="angleterre">Angleterre</option>
+	           </optgroup>
+		           <optgroup label="Groupe C">
+		               <option value="albanie">Albanie</option>
+		               <option value="suede">Suède</option>
+		               <option value="ukraine">Ukraine</option>
+		               <option value="autriche">Autriche</option>
+		           </optgroup>
+		           <optgroup label="Groupe D">
+		               <option value="belgique">Belgique</option>
+		               <option value="espagne">Espagne</option>
+		               <option value="croatie">Croatie</option>
+		               <option value="hongrie">Hongrie</option>
+		           </optgroup>
+		           <optgroup label="Groupe E">
+		               <option value="suisse">Suisse</option>
+		               <option value="slovenie">Slovénie</option>
+		               <option value="italie">Italie</option>
+		               <option value="russie">Russie</option>
+		           </optgroup>
+		           <optgroup label="Groupe F">
+		               <option value="slovaquie">Slovaquie</option>
+		               <option value="rep-tcheque">République tchèque</option>
+		               <option value="portugal">Portugal</option>
+		               <option value="norvege">Norvège</option>
+		           </optgroup>
+		       </select>
+		   </p>
+		   <p>
+		       <label for="pays">Qui est Finaliste ?</label><br />
+		       <select name="pays" id="pays">
+				           <optgroup label="Groupe A">
+				               <option value="france">France</option>
+				               <option value="pologne">Pologne</option>
+				               <option value="bosnie">Bosnie-Herzégovnie</option>
+				               <option value="danemakr">Danemark</option>
+				           </optgroup>
+			           <optgroup label="Groupe B">
+			               <option value="allemagne">Allemagne</option>
+			               <option value="islande">Islande</option>
+			               <option value="turquie">Turquie</option>
+			               <option value="angleterre">Angleterre</option>
+			           </optgroup>
+				           <optgroup label="Groupe C">
+				               <option value="albanie">Albanie</option>
+				               <option value="suede">Suède</option>
+				               <option value="ukraine">Ukraine</option>
+				               <option value="autriche">Autriche</option>
+				           </optgroup>
+				           <optgroup label="Groupe D">
+				               <option value="belgique">Belgique</option>
+				               <option value="espagne">Espagne</option>
+				               <option value="croatie">Croatie</option>
+				               <option value="hongrie">Hongrie</option>
+				           </optgroup>
+				           <optgroup label="Groupe E">
+				               <option value="suisse">Suisse</option>
+				               <option value="slovenie">Slovénie</option>
+				               <option value="italie">Italie</option>
+				               <option value="russie">Russie</option>
+				           </optgroup>
+				           <optgroup label="Groupe F">
+				               <option value="slovaquie">Slovaquie</option>
+				               <option value="rep-tcheque">République tchèque</option>
+				               <option value="portugal">Portugal</option>
+				               <option value="norvege">Norvège</option>
+				           </optgroup>
+		       </select>
+		   </p>
+		   <p>
+		       <label for="pays">Qui finira troisième ?</label><br />
+		       <select name="pays" id="pays">
+				           <optgroup label="Groupe A">
+				               <option value="france">France</option>
+				               <option value="pologne">Pologne</option>
+				               <option value="bosnie">Bosnie-Herzégovnie</option>
+				               <option value="danemakr">Danemark</option>
+				           </optgroup>
+			           <optgroup label="Groupe B">
+			               <option value="allemagne">Allemagne</option>
+			               <option value="islande">Islande</option>
+			               <option value="turquie">Turquie</option>
+			               <option value="angleterre">Angleterre</option>
+			           </optgroup>
+				           <optgroup label="Groupe C">
+				               <option value="albanie">Albanie</option>
+				               <option value="suede">Suède</option>
+				               <option value="ukraine">Ukraine</option>
+				               <option value="autriche">Autriche</option>
+				           </optgroup>
+				           <optgroup label="Groupe D">
+				               <option value="belgique">Belgique</option>
+				               <option value="espagne">Espagne</option>
+				               <option value="croatie">Croatie</option>
+				               <option value="hongrie">Hongrie</option>
+				           </optgroup>
+				           <optgroup label="Groupe E">
+				               <option value="suisse">Suisse</option>
+				               <option value="slovenie">Slovénie</option>
+				               <option value="italie">Italie</option>
+				               <option value="russie">Russie</option>
+				           </optgroup>
+				           <optgroup label="Groupe F">
+				               <option value="slovaquie">Slovaquie</option>
+				               <option value="rep-tcheque">République tchèque</option>
+				               <option value="portugal">Portugal</option>
+				               <option value="norvege">Norvège</option>
+				           </optgroup>
+		       </select>
+		   </p>
+		   <input type="submit" value="Envoyer" />
+		</form>
+	  	<br>
+	  	<br>
+	<!--Bouton Retour-->
+	  <a href="index.html"> RETOUR </a>
+
+	  	<br>
+	  	<br>	  		  
+	  </body>
+
+	</html>
+	
