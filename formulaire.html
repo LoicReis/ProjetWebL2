@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<form method="post" action="traitement.php">
-    <fieldset>
+<html>
+    <head>
+	  <meta charset="utf-8"/>
+	  <!--Permet d'afficher correctement les caractères spéciaux comme é,è..-->
+	  <title>Coupe d'Europe de Football 2016 en France</title>
+	 </head>
+    <form method="post" action="traitement.php">
+        <fieldset>
           <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
 
           <label for="nom">Quel est votre nom ?</label>
@@ -12,7 +18,7 @@
           <label for="email">Quel est votre e-mail ?</label>
           <input type="email" name="email" id="email" />
 
-      </fieldset>
+        </fieldset>
    <p>
        <label for="pays">Qui va gagner la coupe europe ?</label><br />
        <select name="pays" id="pays">
@@ -71,3 +77,4 @@
        </select>
    </p>
 </form>
+</html>
